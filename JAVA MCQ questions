@@ -1,0 +1,414 @@
+MCQ Q/A FOR L1
+
+Core Java
+
+1. Which of these class is superclass of every class in Java?
+a) String class
+b) Object class
+c) Abstract class
+d) ArrayList class
+
+2. Which of these cannot be declared static?
+a) class
+b) object
+c) variable
+d) method
+ 
+3.Which of the given syntax is correct for interface implementation in Java 8?
+a)  interface Demo{
+}
+b) interface Demo{
+default int getNumber(){return 0;}
+}
+c) interface Demo{
+static int getNumber(){return 0;}
+}
+d) interface Demo{
+int getNumber(){return 0;}
+}
+
+4. Multiple inheritance supports in Java.
+a)True.
+b)False.
+5. Scanner Class is found in which package?
+a)  java.lang.
+b) java.util.
+c) java.io.
+d) None of the above.
+
+6) Arrays in java can be declared as following ways?
+a) int[] array = new int[5] 
+b) int[] array = {3 , 7 , 5 , 8 , 4 ,6}
+c) int array[10] = new int[] 
+d) None of these. 
+
+7. What is the Output of the Program? 
+class Base {
+  public final void show() {
+       System.out.println("Base::show() called");
+    }
+}
+class Derived extends Base {
+    public void show() { 
+       System.out.println("Derived::show() called");
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Base b = new Derived();;
+        b.show();
+    }
+}
+
+a) Base::show() called
+b) Derived::show() called
+c) Compilation error
+d) Exception
+
+8. What is the Output of the Program?
+class Base {
+    public static void show() {
+       System.out.println("Base::show() called");
+    }
+}
+  
+class Derived extends Base {
+    public static void show() {
+       System.out.println("Derived::show() called");
+    }
+}
+  
+class Main {
+    public static void main(String[] args) {
+        Base b = new Derived();;
+        b.show();
+    }
+}
+a) Base::show() called.
+b) Derived::show() called.
+c) Compiler error.
+d) runtime exception.
+
+9.What should be the output of the Program? 
+class Test
+{
+    public static void main (String[] args)
+    {
+        int arr1[] = {1, 2, 3};
+        int arr2[] = {1, 2, 3};
+        if (arr1 == arr2)
+            System.out.println("Same");
+        else
+ public class Main {
+public static void main(String[] args)
+    {
+        Demo demo = new Demo();
+        demo.show();
+    }
+}
+a) Compilation Error
+
+            System.out.println("Not same");
+    }
+}
+
+a) Same
+b) Not Same
+c) Compiler error.
+d) None of the above.
+
+10. What is the output of the program?
+   class variable_scope
+   {
+       public static void main(String args[])
+       {
+           int x;
+           x = 5;
+           {
+	        int y = 6;
+	        System.out.print(x + " " + y);
+           }
+           System.out.println(x + " " + y);
+       }
+   }
+a) 5 6 5 6
+b) 5 6 5
+c) Runtime error
+d) Compilation error
+ 
+Collection.
+11.   import java.util.*;
+   class Arraylist
+   {
+       public static void main(String args[])
+       {
+           ArrayList obj = new ArrayList();
+           obj.add("A");
+           obj.add("B");
+           obj.add("C");
+           obj.add(1, "D");
+           System.out.println(obj);
+       }
+   }
+a) [A, B, C, D].
+b) [A, D, B, C].
+c) [A, D, C].
+d) [A, B, C].
+ 
+12. Which of the following methods are declared in List interface?
+a) get(int index)
+b) iterator()
+c) listiterator()
+d) remove()
+ 
+13. import java.util.ArrayList;
+class Demo {
+public void show()
+    {
+   ArrayList<Integer> list = new ArrayList<Integer>();
+        list.add(4);
+        list.add(7);
+        list.add(1);
+        for (int number : list) {
+           System.out.print(number + " ");
+}
+}	
+}
+public class Main {
+public static void main(String[] args)
+    {
+        Demo demo = new Demo();
+        demo.show();
+    }
+}
+a) Compilation Error
+b) 4 7 1
+c)  1 4 7
+d)  None
+ 
+14. import java.util.*;
+   class Output
+   {
+       public static void main(String args[])
+       {
+           HashSet obj = new HashSet();
+           obj.add("A");
+           obj.add("B");
+           obj.add("C");
+ 
+           System.out.println(obj + " " + obj.size())
+ 
+       }
+   }
+a) ABC 3
+b) [A, B, C] 3
+c) ABC 2
+d) [A, B, C] 2
+ 
+15.    import java.util.*;
+   class hashtable
+   {
+       public static void main(String args[])
+       {
+           Hashtable obj = new Hashtable();
+           obj.put("A", new Integer(3));
+           obj.put("B", new Integer(2));
+           obj.put("C", new Integer(8));
+           System.out.print(obj.contains(new Integer(5)));
+}
+   }
+a) 0
+b) 1
+c) true
+d) false
+ 
+16.  Which Interface does java.util.Hashtable implement?
+Java.util.Map.
+Java.util.List.
+Java.util.HashTable.
+Java.util.Collection.
+17. Which does NOT implement the Collection interface?
+a) List.
+b) Map.
+c) Set
+d) None of these.
+Exception.
+18. 
+class Test
+{
+    public static void main (String[] args)
+    {
+        try
+        {
+            int a = 0;
+            System.out.println ("a = " + a);
+            int b = 20 / a;
+            System.out.println ("b = " + b);
+        }
+ 
+        catch(ArithmeticException e)
+        {
+            System.out.println ("Divide by zero error");
+        }
+ 
+        finally
+        {
+            System.out.println ("inside the finally block");
+        }
+    }
+}
+
+a) Compile error
+b) Divide by zero error
+c) a=0
+   Divide by zero error
+   inside the finally block
+d) a = 0
+e) inside the finally block
+
+19. Which of these is a super class of all errors and exceptions in the Java language?
+
+a) RunTimeExceptions
+b) Throwable.
+c) Exception.
+d) Catchable.
+
+20. Which of the following classes can catch all exceptions which cannot be caught?
+
+a) RuntimeException
+b) Error
+c) Exception
+d) ParentException
+
+21. Which of the following handles the exception when a catch is not used?
+
+a) finally
+b) throw handler
+c) default handler
+d) java run time system
+
+22.
+class exception_handling
+   {
+       public static void main(String args[])
+       {
+           try
+           {
+               System.out.print("Hello" + " " + 1 / 0);
+               }
+           catch(ArithmeticException e)
+           {
+       	System.out.print("World");        	
+           }
+       }
+   }
+a) Hello
+b) World
+c) HelloWorld
+d) Hello World
+Lambda(->).
+
+23.What is the return type of lambda expression?
+
+a) String
+b) Object
+c) void
+d) Function
+
+24. Which of the given options are built-in functional interfaces?
+
+a)supplier
+b) consumer
+c) predicate
+d) producer
+
+25.Which of the given statements are true about functional interface?
+
+a)  Use of @FunctionalInterface is optional
+b) It has exactly one abstract method
+c) It can also have static and default method
+d) It may contain more than one abstract method
+
+Stream API.
+
+26. Which of the given are characteristics of Stream API?
+1). Designed for lambdas
+2). Can easily be output as an array or list
+3). Support indexed access
+4). Bounded
+
+27. Operations on stream are categories as
+a) Filter
+b) Map
+c) both
+d) none of these
+
+28.  Operations that close a stream pipeline are called __________?
+
+a) intermediate operations
+b) terminal operations
+c) search operations
+d) none of these
+
+File I/O.
+
+29. Which of these class is used to read and write bytes in a file?
+a) FileReader
+b) FileWriter
+c) FileInputStream
+d) InputStreamReader
+
+30. Which of these class is used to read characters in a file?
+a) FileReader
+b) FileWriter
+c) FileInputStream
+d) InputStreamReader
+
+Multithreading.
+
+31.  Which of the following are methods of Thread class?
+
+1). isAlive()
+2). notify()
+3). wait()
+4). join()
+
+32. Which method must be defined by a class implementing the java.lang.Runnable interface?
+1). void run()
+2). public void run()
+3). public void start()
+4). void run(int priority)
+
+JUnit.
+
+33.JUnits are used for which type of testing?
+a) Unit Testing
+b) Integration Testing
+c) System Testing
+d) Blackbox Testing
+
+34. Which method is used to verify the actual and expected results       in Junits?
+
+a) assert()
+b) equals()
+c) ==
+d) isEqual()
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
